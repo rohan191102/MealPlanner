@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CreateRecipe">
+
+        <EditText
+            android:id="@+id/txtPrepTime"
+            android:layout_width="94dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="456dp"
+            android:hint="Prep Time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtCookTime"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtTotalTime" />
+
+        <EditText
+            android:id="@+id/txtTotalTime"
+            android:layout_width="97dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="456dp"
+            android:hint="Total Time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtPrepTime"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCookTime"
+            android:layout_width="106dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="456dp"
+            android:hint="Cook Time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtPrepTime" />
+
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="393dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="260dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtRecipeName"
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="44dp"
+            android:ems="10"
+            android:hint="Recipe Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtServings"
+            android:layout_width="141dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="156dp"
+            android:ems="10"
+            android:hint="Servings"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RatingBar
+            android:id="@+id/recipeRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="140dp"
+            android:contentDescription="Rate this recipe"
+            android:isIndicator="false"
+            android:max="5"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtServings" />
+        <Button
+            android:id="@+id/btnAddIngridients"
+            android:layout_width="90dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="61dp"
+            android:onClick="onBtnAddIngridients_Clicked"
+            android:text="+"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtIngridients" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="381dp"
+            android:layout_height="261dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Add an image from your gallery"
+            android:onClick="onbtnImage_Clicked"
+            app:layout_constraintBottom_toTopOf="@+id/txtPrepTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/no_image" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/txtIngridients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:includeFontPadding="false"
+            android:text="INGRIDIENTS"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/txtIngridients"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

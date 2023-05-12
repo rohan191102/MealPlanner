@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context=".SignUp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCreateReicpe"
+        android:layout_width="64dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="floating button for creating a button"
+        android:onClick="onFabAddRecipe_Clicked"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="600dp"
+            android:background="@android:color/holo_orange_dark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="My Recipes"
+            app:titleMargin="0dp"
+            app:titleMarginStart="100dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/toolbar"
+            android:contentDescription="search button on the toolbar"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
