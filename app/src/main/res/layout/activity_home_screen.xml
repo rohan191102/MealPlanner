@@ -19,7 +19,7 @@
         app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/baseline_add_24" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_marginBottom="600dp"
             android:background="@android:color/holo_orange_dark"
             android:minHeight="?attr/actionBarSize"
@@ -38,12 +38,28 @@
             app:titleMarginStart="100dp" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/menu_button_home"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#FE8700"
+            android:contentDescription="A tiny Android icon"
+            android:minWidth="45dp"
+            android:minHeight="48dp"
+            android:onClick="onBtnMenu_Clicked"
+            android:src="@drawable/baseline_menu_24"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/searchBtn_home"
+            android:layout_width="76dp"
+            android:layout_height="65dp"
             android:layout_alignEnd="@id/toolbar"
-            android:contentDescription="search button on the toolbar"
-            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+            android:background="#FE8700"
+            android:contentDescription="@string/search_button_on_the_toolbar"
+            android:minWidth="45dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_search_24"
+            app:tint="#FFFFFF" />
 
     </RelativeLayout>
 

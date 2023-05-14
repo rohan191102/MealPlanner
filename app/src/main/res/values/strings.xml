@@ -9,4 +9,9 @@
     <string name="signup">SIGN UP</string>
     <string name="a_tiny_android_icon">A tiny Android icon</string>
     <string name="search_button_on_the_toolbar">search button on the toolbar</string>
+    <string name="home">Home</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
 </resources>

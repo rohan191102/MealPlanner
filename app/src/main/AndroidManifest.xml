@@ -15,6 +15,24 @@
         android:theme="@style/Theme.MealPlannerFinal"
         tools:targetApi="31">
         <activity
+            android:name=".shopping.ShoppingList"
+            android:exported="false" />
+        <activity
+            android:name=".settings.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".myrecipes.MyRecipes"
+            android:exported="false" />
+        <activity
+            android:name=".menu.Menu"
+            android:exported="false" />
+        <activity
+            android:name=".mealplans.MealPlans"
+            android:exported="false" />
+        <activity
             android:name=".createrecipe.CreateRecipe"
             android:exported="false" />
         <activity
