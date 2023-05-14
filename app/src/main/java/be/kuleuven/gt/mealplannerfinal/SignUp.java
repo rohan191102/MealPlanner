@@ -1,7 +1,9 @@
 package be.kuleuven.gt.mealplannerfinal;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUp extends AppCompatActivity {
 
