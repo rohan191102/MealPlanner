@@ -1,13 +1,14 @@
-package be.kuleuven.gt.mealplannerfinal;
+package be.kuleuven.gt.mealplannerfinal.home;
 
 import android.content.Intent;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import be.kuleuven.gt.mealplannerfinal.R;
+import be.kuleuven.gt.mealplannerfinal.createrecipe.CreateRecipe;
 
 public class HomeScreen extends AppCompatActivity {
 

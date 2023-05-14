@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".CreateRecipe">
+        tools:context=".createrecipe.CreateRecipe">
 
         <EditText
             android:id="@+id/txtPrepTime"

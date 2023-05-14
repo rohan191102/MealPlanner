@@ -1,4 +1,4 @@
-package be.kuleuven.gt.mealplannerfinal;
+package be.kuleuven.gt.mealplannerfinal.createrecipe;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -6,23 +6,17 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.os.Bundle;
 
 import android.text.InputType;
-import android.view.LayoutInflater;
 import android.view.View;
 
 import android.view.Window;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import androidx.appcompat.app.AlertDialog;
@@ -33,6 +27,8 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import be.kuleuven.gt.mealplannerfinal.R;
 
 public class CreateRecipe extends AppCompatActivity {
 

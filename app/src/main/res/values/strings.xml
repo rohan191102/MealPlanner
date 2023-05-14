@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Meal Planner Final</string>
+    <string name="meal_master">Meal Master</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="logo">Logo</string>
+    <string name="signin">SIGN IN</string>
+    <string name="forgotpass">FORGOT PASSWORD</string>
+    <string name="signup">SIGN UP</string>
+    <string name="a_tiny_android_icon">A tiny Android icon</string>
+    <string name="search_button_on_the_toolbar">search button on the toolbar</string>
 </resources>

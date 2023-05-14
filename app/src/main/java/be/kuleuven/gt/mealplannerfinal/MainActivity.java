@@ -17,10 +17,13 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import be.kuleuven.gt.mealplannerfinal.forgotpass.ForgotPassword;
+import be.kuleuven.gt.mealplannerfinal.home.HomeScreen;
+import be.kuleuven.gt.mealplannerfinal.signup.SignUp;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -35,15 +38,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setActivityBackgroundColor(Color.parseColor("#FFA500"));
         getSupportActionBar().hide();
         enteredUsername = (TextView) findViewById(R.id.txtUsername);
         enteredPassword = (TextView) findViewById(R.id.txtPassword);
         request();
-    }
-    public void setActivityBackgroundColor(int color) {
-        View view = this.getWindow().getDecorView();
-        view.setBackgroundColor(color);
     }
     public void onBtnLogin_Clicked(View Caller){
 
