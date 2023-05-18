@@ -15,7 +15,7 @@
         <EditText
             android:id="@+id/txtPrepTime"
             android:layout_width="94dp"
-            android:layout_height="63dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="456dp"
             android:hint="Prep Time"
@@ -27,7 +27,7 @@
         <EditText
             android:id="@+id/txtTotalTime"
             android:layout_width="97dp"
-            android:layout_height="57dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="300dp"
             android:layout_marginBottom="456dp"
             android:hint="Total Time"
@@ -40,7 +40,7 @@
         <EditText
             android:id="@+id/txtCookTime"
             android:layout_width="106dp"
-            android:layout_height="61dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginBottom="456dp"
             android:hint="Cook Time"
@@ -51,7 +51,7 @@
         <EditText
             android:id="@+id/txtDescription"
             android:layout_width="393dp"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginBottom="260dp"
             android:ems="10"
@@ -64,7 +64,7 @@
         <EditText
             android:id="@+id/txtRecipeName"
             android:layout_width="253dp"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="44dp"
             android:ems="10"
             android:hint="Recipe Name"
@@ -75,7 +75,7 @@
         <EditText
             android:id="@+id/txtServings"
             android:layout_width="141dp"
-            android:layout_height="53dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginBottom="192dp"
             android:ems="10"
@@ -102,8 +102,8 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="381dp"
-            android:layout_height="261dp"
+            android:layout_width="331dp"
+            android:layout_height="236dp"
             android:layout_marginStart="4dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="Add an image from your gallery"
@@ -124,7 +124,7 @@
         <TextView
             android:id="@+id/txtIngredients"
             android:layout_width="390dp"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginBottom="124dp"
             android:clickable="true"
@@ -158,13 +158,34 @@
         <Button
             android:id="@+id/btnCategory"
             android:layout_width="63dp"
-            android:layout_height="37dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="252dp"
             android:layout_marginBottom="12dp"
             android:onClick="onBtnCategory_Clicked"
             android:text="+"
             app:layout_constraintBottom_toTopOf="@+id/editTextTags"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAddsRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="59dp"
+            android:onClick="onBtnAddsRecipe_Clicked"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+            app:layout_constraintStart_toEndOf="@+id/txtRecipeName" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

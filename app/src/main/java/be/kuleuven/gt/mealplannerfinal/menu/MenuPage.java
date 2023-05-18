@@ -14,12 +14,12 @@ import be.kuleuven.gt.mealplannerfinal.profile.Profile;
 import be.kuleuven.gt.mealplannerfinal.settings.Settings;
 import be.kuleuven.gt.mealplannerfinal.shopping.ShoppingList;
 
-public class Menu extends AppCompatActivity {
+public class MenuPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_menu_page);
     }
 
     public void onBtnHome_Clicked(View Caller)

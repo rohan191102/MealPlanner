@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.Menu">
+    tools:context=".menu.MenuPage">
 
     <Button
         android:id="@+id/home_button"
@@ -17,6 +17,7 @@
         android:drawableStart="@drawable/baseline_home_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnHome_Clicked"
         android:text="@string/home"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +35,7 @@
         android:drawableStart="@drawable/baseline_settings_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnSettings_Clicked"
         android:text="@string/settings"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +52,7 @@
         android:drawableStart="@drawable/baseline_person_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnProfile_Clicked"
         android:text="@string/profile"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +69,7 @@
         android:drawableStart="@drawable/baseline_shopping_cart_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnShopping_Clicked"
         android:text="@string/shopping_list"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +87,7 @@
         android:drawableStart="@drawable/baseline_today_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnMealPlans_Clicked"
         android:text="My Meal Plans"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +105,7 @@
         android:drawableStart="@drawable/baseline_menu_book_24"
         android:drawablePadding="4dp"
         android:foregroundTint="#F9F9F9"
+        android:onClick="onBtnRecipes_Clicked"
         android:text="@string/my_recipes"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
