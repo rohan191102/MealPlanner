@@ -58,7 +58,6 @@ public class SignUp extends AppCompatActivity {
 
         requestQueue = Volley.newRequestQueue(this);
     }
-
     public Map<String, String> getPostParameters() {
         Map<String, String> params = new HashMap<>();
         params.put("username", username.getText().toString());
@@ -68,7 +67,6 @@ public class SignUp extends AppCompatActivity {
         params.put("password", password.getText().toString());
         return params;
     }
-
     public void onBtnCreateAccount_Clicked(View Caller) {
         String user = username.getText().toString();
         String pass = password.getText().toString();
@@ -85,9 +83,8 @@ public class SignUp extends AppCompatActivity {
             return;
         }
 
-        String POST_URL2 = POST_URL + "/" +user+ "/" +pass+ "/" +firstName +"/" +lastName+ "/" +emailAddr;
+        String POST_URL2 = POST_URL + "/" +user+ "/" +emailAddr+ "/" +firstName +"/" +lastName+ "/" +pass;
 
-        // Create a StringRequest for the POST request
         StringRequest submitRequest = new StringRequest(
                 Request.Method.GET,
                 POST_URL2,
@@ -112,6 +109,5 @@ public class SignUp extends AppCompatActivity {
             }
         };
         requestQueue.add(submitRequest);
-        System.out.println(POST_URL2);
     }
 }

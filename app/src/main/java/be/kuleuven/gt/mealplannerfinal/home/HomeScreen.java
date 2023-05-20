@@ -3,6 +3,7 @@ package be.kuleuven.gt.mealplannerfinal.home;
 import android.content.Intent;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import be.kuleuven.gt.mealplannerfinal.createrecipe.CreateRecipe;
 import be.kuleuven.gt.mealplannerfinal.menu.MenuPage;
 
 public class HomeScreen extends AppCompatActivity {
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,9 @@ public class HomeScreen extends AppCompatActivity {
     }
     public void onBtnMenu_Clicked(View Caller)
     {
+        username = getIntent().getStringExtra("username");
         Intent intent = new Intent(this, MenuPage.class);
+        intent.putExtra("username", username);
         startActivity(intent);
     }
 }

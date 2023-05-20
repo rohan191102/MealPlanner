@@ -15,11 +15,13 @@ import be.kuleuven.gt.mealplannerfinal.settings.Settings;
 import be.kuleuven.gt.mealplannerfinal.shopping.ShoppingList;
 
 public class MenuPage extends AppCompatActivity {
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_page);
+        getSupportActionBar().hide();
     }
 
     public void onBtnHome_Clicked(View Caller)
@@ -48,10 +50,11 @@ public class MenuPage extends AppCompatActivity {
 
     public void onBtnProfile_Clicked(View Caller)
     {
+        username = getIntent().getStringExtra("username");
         Intent intent = new Intent(this, Profile.class);
+        intent.putExtra("username", username);
         startActivity(intent);
     }
-
     public void onBtnSettings_Clicked(View Caller)
     {
         Intent intent = new Intent(this, Settings.class);

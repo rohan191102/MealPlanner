@@ -23,10 +23,11 @@ import java.util.Map;
 
 import be.kuleuven.gt.mealplannerfinal.forgotpass.ForgotPassword;
 import be.kuleuven.gt.mealplannerfinal.home.HomeScreen;
+import be.kuleuven.gt.mealplannerfinal.profile.Profile;
 import be.kuleuven.gt.mealplannerfinal.signup.SignUp;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private static final String QUEUE_URL = "https://studev.groept.be/api/a22pt207/Users";
     private TextView enteredUsername;
@@ -43,21 +44,20 @@ public class MainActivity extends AppCompatActivity {
         enteredPassword = (TextView) findViewById(R.id.txtPassword);
         request();
     }
-    public void onBtnLogin_Clicked(View Caller){
+    public void onBtnLogin_Clicked(View Caller) {
+        String username = enteredUsername.getText().toString();
+        String password = enteredPassword.getText().toString();
 
-        if(validateCredentials(enteredUsername.getText().toString(), enteredPassword.getText().toString()))
-        {
+        if (validateCredentials(username, password)) {
             Intent intent = new Intent(this, HomeScreen.class);
+            intent.putExtra("username", username);
             startActivity(intent);
-        }
-        if(!validateCredentials(enteredUsername.getText().toString(), enteredPassword.getText().toString()))
-        {
-            Toast.makeText(
-                    MainActivity.this,
-                    "Invalid Credentials",
-                    Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
         }
     }
+
+
 
     public void onTxtSignUp_Clicked(View Caller)
     {
@@ -135,5 +135,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
 }
